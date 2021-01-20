@@ -39,7 +39,6 @@ Resources:
         - Arn
       Events:
         GetEvent:
-          Type: Api
           Properties:
             Path: /hello-world
             Method: get
