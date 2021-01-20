@@ -12,7 +12,11 @@ app.post('/', function(req, res) {
     "Output": "Hello World!"
   });
 });
-
+app.get('hello-world',function(req,res)=>{
+  res.send({
+    "Message":"Hello world"
+  })
+})
 
 // Export your Express configuration so that it can be consumed by the Lambda handler
 module.exports = app
