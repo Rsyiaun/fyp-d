@@ -14,7 +14,7 @@ app.post('/', function(req, res) {
 });
 app.get('/hello-world',(req,res)=>{
   res.send({
-    "Message":"Hello world"
+    "Message":"diu"
   })
 })
 
