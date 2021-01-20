@@ -12,9 +12,9 @@ app.post('/', function(req, res) {
     "Output": "Hello World!"
   });
 });
-app.get('/hello-world/{name}',(req,res)=>{
+app.get('/hello-world',(req,res)=>{
   res.send({
-    "Message":`Hello ${req.params.name}`
+    "Message":`Hello `
   })
 })
 
