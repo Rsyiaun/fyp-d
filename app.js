@@ -21,7 +21,7 @@ app.get('/hello-world',(req,res)=>{
 
 app.get('/name',(req,res)=>{
   res.send({
-    "Message":"Hejjllo"
+    "Message":`Hello,${req.params.name}`
   })
 })
 // Export your Express configuration so that it can be consumed by the Lambda handler
