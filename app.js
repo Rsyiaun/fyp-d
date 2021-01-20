@@ -12,16 +12,16 @@ app.post('/', function(req, res) {
     "Output": "Hello World!"
   });
 });
-app.get('/hello-world',(req,res)=>{
+app.get('/hello-world/{name}',(req,res)=>{
   res.send({
-    "Message":"diu"
+    "Message":`Hello ${req.params.name}`
   })
 })
 
 
 app.get('/name/{name}',(req,res)=>{
   res.send({
-    message:'Hello ${req.params.name}',
+    message:`Hello ${req.params.name}`,
   })
 })
 // Export your Express configuration so that it can be consumed by the Lambda handler
