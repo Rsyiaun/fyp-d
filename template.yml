@@ -41,11 +41,6 @@ Resources:
         GetEvent:
           Type: Api
           Properties:
-            Path: /
-            Method: get  
-        GetEvent:
-          Type: Api
-          Properties:
             Path: /hello-world
             Method: get  
         PostEvent:
