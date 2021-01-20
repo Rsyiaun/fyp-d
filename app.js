@@ -12,7 +12,7 @@ app.post('/', function(req, res) {
     "Output": "Hello World!"
   });
 });
-app.get('hello-world',function(req,res)=>{
+app.get('hello-world',function(req,res){
   res.send({
     "Message":"Hello world"
   })
