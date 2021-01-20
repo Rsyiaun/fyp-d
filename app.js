@@ -14,10 +14,15 @@ app.post('/', function(req, res) {
 });
 app.get('/hello-world',(req,res)=>{
   res.send({
-    "Message":"Hello World!"
+    "Message":"Hello"
   })
 })
 
 
+app.get('/name',(req,res)=>{
+  res.send({
+    message:`Hello ${req.params.name}`,
+  })
+})
 // Export your Express configuration so that it can be consumed by the Lambda handler
 module.exports = app
